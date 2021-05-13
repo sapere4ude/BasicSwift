@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController {
     
     
     @IBOutlet weak var imgView: UIImageView!
@@ -26,6 +26,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.present(picker, animated: true, completion: nil)
     }
     
+    
+}
+
+// MARK:- 이미지 피커를 사용하기 위한 델리게이트 사용
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // 이미지 피커에서 이미지를 선택하지 않고 취소했을 때 호출되는 메서드
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.dismiss(animated: false) { () in
@@ -46,4 +51,3 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
 }
-
