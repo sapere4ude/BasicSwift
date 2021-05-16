@@ -15,6 +15,10 @@
 		B75F84A1264F717B00529366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75F84A0264F717B00529366 /* Main.storyboard */; };
 		B75F84A3264F71D200529366 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F84A2264F71D200529366 /* ListViewController.swift */; };
 		B75F84A5264F758200529366 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F84A4264F758200529366 /* MovieVO.swift */; };
+		B75F84A72650BAD200529366 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F84A62650BAD200529366 /* MovieCell.swift */; };
+		B75F84AC2650BD9C00529366 /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B75F84A92650BD9C00529366 /* darknight.jpg */; };
+		B75F84AD2650BD9C00529366 /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B75F84AA2650BD9C00529366 /* rain.jpg */; };
+		B75F84AE2650BD9C00529366 /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B75F84AB2650BD9C00529366 /* secret.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		B75F84A0264F717B00529366 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B75F84A2264F71D200529366 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		B75F84A4264F758200529366 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		B75F84A62650BAD200529366 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		B75F84A92650BD9C00529366 /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
+		B75F84AA2650BD9C00529366 /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rain.jpg; sourceTree = "<group>"; };
+		B75F84AB2650BD9C00529366 /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		B75F848B264DE64A00529366 /* ch08_tableView */ = {
 			isa = PBXGroup;
 			children = (
+				B75F84A82650BD4E00529366 /* Resources */,
 				B75F848C264DE64A00529366 /* AppDelegate.swift */,
 				B75F848E264DE64A00529366 /* SceneDelegate.swift */,
 				B75F8490264DE64A00529366 /* ViewController.swift */,
@@ -67,10 +76,21 @@
 				B75F8497264DE64B00529366 /* LaunchScreen.storyboard */,
 				B75F849A264DE64B00529366 /* Info.plist */,
 				B75F84A0264F717B00529366 /* Main.storyboard */,
+				B75F84A62650BAD200529366 /* MovieCell.swift */,
 				B75F84A4264F758200529366 /* MovieVO.swift */,
 				B75F84A2264F71D200529366 /* ListViewController.swift */,
 			);
 			path = ch08_tableView;
+			sourceTree = "<group>";
+		};
+		B75F84A82650BD4E00529366 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B75F84A92650BD9C00529366 /* darknight.jpg */,
+				B75F84AA2650BD9C00529366 /* rain.jpg */,
+				B75F84AB2650BD9C00529366 /* secret.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75F84AC2650BD9C00529366 /* darknight.jpg in Resources */,
+				B75F84AE2650BD9C00529366 /* secret.jpg in Resources */,
+				B75F84AD2650BD9C00529366 /* rain.jpg in Resources */,
 				B75F84A1264F717B00529366 /* Main.storyboard in Resources */,
 				B75F8499264DE64B00529366 /* LaunchScreen.storyboard in Resources */,
 				B75F8496264DE64B00529366 /* Assets.xcassets in Resources */,
@@ -145,6 +168,7 @@
 			files = (
 				B75F8491264DE64A00529366 /* ViewController.swift in Sources */,
 				B75F848D264DE64A00529366 /* AppDelegate.swift in Sources */,
+				B75F84A72650BAD200529366 /* MovieCell.swift in Sources */,
 				B75F84A3264F71D200529366 /* ListViewController.swift in Sources */,
 				B75F848F264DE64A00529366 /* SceneDelegate.swift in Sources */,
 				B75F84A5264F758200529366 /* MovieVO.swift in Sources */,
