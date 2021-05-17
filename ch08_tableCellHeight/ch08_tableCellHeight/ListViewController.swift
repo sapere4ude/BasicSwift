@@ -59,5 +59,20 @@ class ListViewController: UITableViewController {
 //        let height = CGFloat(60 + (row.count / 30) * 20)
 //        return height
 //    }
+    
+    override func viewDidLoad() {
+        // 호핀 API 호출을 위한 URI 생성
+        let url = "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=1&count=10&genreId=&order=releasedateasc"
+        
+        let apiURI: URL! = URL(string: url)
+        
+        // REST API 호출
+        let apiData = try! Data(contentsOf: apiURI)
+        
+        // 데이터 전송 결과를 로그로 출력
+        let log = NSString(data: apiData, encoding: String.Encoding.utf8.rawValue) ?? ""
+        NSLog("API Result = \(log)")
+        
+    }
 }
 
