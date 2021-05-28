@@ -137,6 +137,51 @@
             </objects>
             <point key="canvasLocation" x="3818.8405797101454" y="64.955357142857139"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="Jxk-0n-me9">
+            <objects>
+                <tableViewController id="Zjm-wQ-wtc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="T9O-4m-9KC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tGC-fj-n21">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tGC-fj-n21" id="m8z-pG-nln">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Zjm-wQ-wtc" id="7eq-2j-EuF"/>
+                            <outlet property="delegate" destination="Zjm-wQ-wtc" id="CS8-y7-OVc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="HmR-7O-wmS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWB-db-T5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3881" y="772"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Bi-Sp-1Cd">
+            <objects>
+                <navigationController id="w7e-NZ-qoQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Afa-T1-xkk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zjm-wQ-wtc" kind="relationship" relationship="rootViewController" id="AjQ-WS-HYN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmU-6z-aeF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="772"/>
+        </scene>
         <!--영화 차트-->
         <scene sceneID="U5r-qs-YDg">
             <objects>
@@ -162,6 +207,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aqe-pd-BDx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NcR-5F-gpy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
